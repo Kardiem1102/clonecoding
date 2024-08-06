@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오</title>
+  <link rel="stylesheet" href="clone_kakao.css">
+  <link rel="shortcut icon" href="./img/tab_icon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <!-- 헤더 로고 -->
+        <li id = "header-left">
+          <div><a href="" id = "header-logo">kakao</a></div>
+        </li>
+        <!-- 헤더 가운데 메뉴 -->
+        <li class = "header-center" id = "header-intro">
+          <div>
+            <a href="">소개</a>
+            <ul class = "header-drop" id = "drop-intro">
+              <li><a href="">카카오 그룹</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">연혁</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class = "header-center" id = "header-story">
+          <div>
+            <a href="">이야기</a>
+            <ul class="header-drop" id = "drop-story">
+              <li><a href="">콘텐츠 저장소</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">뚝딱뚝딱 성장기</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">숫자로 보는 카카오</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">카카오 나우</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class = "header-center" id = "header-tech">
+          <div><a href="">기술과 서비스</a>
+            <ul class = "header-drop" id = "drop-tech">
+              <li><a href="">기술</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">서비스</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class = "header-center" id = "header-resp">
+          <div><a href="">약속과 책임</a>
+            <ul class="header-drop" id = "drop-resp">
+              <li><a href="">카카오의 다짐</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">ESG</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">액티브그린</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">정책</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class = "header-center" id = "header-news">
+          <div><a href="">뉴스</a>
+            <ul class = "header-drop" id = "drop-news">
+              <li><a href="">기술</a></li>&nbsp;&nbsp;&nbsp;
+              <li><a href="">서비스</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class = "header-center" id = "header-invest">
+          <div><a href="">투자정보↗</a></div>
+        </li>
+        <!-- 헤더 오른쪽 아이콘들 -->
+        <li class = "header-right" id = "header-mag">
+          <div><a href=""><img src="./img/magnifier.PNG" alt="검색"></a></div>
+        </li>
+        <li class = "header-right">
+          <div><a href=""><img src="./img/globe.PNG" alt="한/EN"></a></div>
+        </li>
+        <li class = "header-right">
+          <div><a href=""><img src="./img/moon.PNG" alt="Bright/Dark"></a></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- 카카오와 카카오 그룹이 축적해온 이야기들 -->
+    <div id = "main-stories">
+      <span class = "black-back-play">▶</span><h3 id="story-title">&nbsp;카카오와 카카오 그룹이 축적해온 이야기들</h3>
+      <section id = "story-banner">
+        <div id="banner-cont">
+          <!-- 1번 -->
+          <a href="" class = "banner-large-ex" id ="banner-1">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>왕초보 사장님들의 단골 만들기 비법</strong>
+                <br><br>
+                <div>마케팅이 어려웠던 사장님이 매출 500% 올린 비결</div>
+                <div class = "banner-tag-large">#소상공인지원&nbsp;&nbsp;#카카오상생활동&nbsp;&nbsp;#카카오톡채널</div>
+              </div>
+            </div>
+          </a>
+          <!-- 2번 -->
+          <a href="" class = "banner-small-up" id ="banner-2">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_cards.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">더 가깝게</span>
+                </div>
+                <br>
+                <strong class = banner-title>무료로 여는 톡 안의 두번째 매장</strong>                
+                <div class = "banner-tag-small">#디지털전환&nbsp;&nbsp;#카카오톡채널</div>
+              </div>
+            </div>
+          </a>
+          <!-- 3번 -->
+          <a href="" class = "banner-small-down" id ="banner-3">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>도로 위 히어로즈</strong>
+                <br>
+                <div class = "banner-tag-small">#카카오모빌리티&nbsp;&nbsp;#파트너상생</div>
+              </div>
+            </div>
+          </a>
+          <!-- 4번 -->
+          <a href="" class = "banner-small-up" id ="banner-4">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>카카오가 꿈꾸는 지속가능한 미래</strong>
+                <br>
+                <div class = "banner-tag-small">#ESG&nbsp;&nbsp;#ESG보고서&nbsp;&nbsp;#약속과책임&nbsp;&nbsp;#카카오</div>
+              </div>
+            </div>
+          </a>
+          <!-- 5번 -->
+          <a href="" class = "banner-small-down" id ="banner-5">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">서비스</span>
+                </div>
+                <br>
+                <strong class = banner-title>진화에 누구보다 진심인 편</strong>
+                <br>
+                <div class = "banner-tag-small">#조승연의탐구생활&nbsp;&nbsp;#카카오톡&nbsp;&nbsp;#카톡이지</div>
+              </div>
+            </div>
+          </a>
+          <!-- 6번 -->
+          <a href="" class = "banner-large" id ="banner-6">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_footprint.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">뚝딱뚝딱 성장기</span>
+                </div>
+                <br>
+                <strong class = banner-title>지역 정보 매체에서 위치기반 상호작용 플랫폼으로</strong>
+                <br><br>
+                <div>카카오맵에서 일어난 24년간의 업데이트 이야기</div>
+                <div class = "banner-tag-large">#지도플랫폼&nbsp;&nbsp;#카카오맵&nbsp;&nbsp;#트렌드랭킹</div>
+              </div>
+            </div>
+          </a>
+          <!-- 7번 -->
+          <a href=""  class = "banner-small-up" id ="banner-7">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_cards.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>웰 메이드 : 콘텐츠 IP의 저력</strong>
+                <br>
+                <div class = "banner-tag-small">#K콘텐츠&nbsp;&nbsp;#웹소설&nbsp;&nbsp;#웹툰</div>
+              </div>
+            </div>
+          </a>
+          <!-- 8번 -->
+          <a href=""  class = "banner-small-down" id ="banner-8">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">서비스</span>
+                </div>
+                <br>
+                <strong class = banner-title>100명에게 물어봤습니다</strong>
+                <br>
+                <div class = "banner-tag-small">#로드트립&nbsp;&nbsp;#카카오톡&nbsp;&nbsp;#카톡이지</div>
+              </div>
+            </div>
+          </a>
+          <!-- 9번 -->
+          <a href="" class = "banner-small-up" id ="banner-9">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">서비스</span>
+                </div>
+                <br>
+                <strong class = banner-title>접근성, 어디까지 고민해 봤나요?</strong>
+                <br>
+                <div class = "banner-tag-small">#디지털접근성&nbsp;&nbsp;#카카오톡&nbsp;&nbsp;#카톡이지</div>
+              </div>
+            </div>
+          </a>
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- 더 나은 세상을 만드는 카카오 서비스 -->
+    <div id = "main-services">
+      <h3 id = "service-title">&nbsp;더 나은 세상을 만드는 카카오 서비스</h3>
+      <div id = "service-content">
+        <section class="service-menu1">
+          <article>커뮤니케이션</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_talk.png" alt=""></a>
+              <a href=""><img src="./img/service/service_daum.png" alt=""></a>
+              <a href=""><img src="./img/service/service_stroy.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+        <section class="service-menu2">
+          <article>비즈니스</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_channel.png" alt=""></a>
+              <a href=""><img src="./img/service/service_cloud.png" alt=""></a>
+              <a href=""><img src="./img/service/service_agit.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+        <section class="service-menu3">
+          <article>일상편의</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_navi.png" alt=""></a>
+              <a href=""><img src="./img/service/service_taxi.png" alt=""></a>
+              <a href=""><img src="./img/service/service_b.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+        <section class="service-menu4">
+          <article>쇼핑</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_gift.png" alt=""></a>
+              <a href=""><img src="./img/service/service_mall.png" alt=""></a>
+              <a href=""><img src="./img/service/service_z.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+        <section class="service-menu5">
+          <article>엔터테인먼트</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_page.png" alt=""></a>
+              <a href=""><img src="./img/service/service_jp.png" alt=""></a>
+              <a href=""><img src="./img/service/service_green.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+        <section class="service-menu6">
+          <article>소셜임팩트</article>
+          <div class = "menu-icons">
+            <article>
+              <a href=""><img src="./img/service/service_save.png" alt=""></a>
+              <a href="" class="icon-plus">+</a>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div id="service-all" class="all-link">
+        <a href="">서비스 전체보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">→</span></a>
+      </div>
+    </div>
+    <!-- 오늘의 뉴스 -->
+    <div id = "main-news">
+      <h3 id = "news-title">&nbsp;오늘의 뉴스</h3>
+      <!-- 뉴스 1번째 라인 (칸 3개) -->
+      <div id = "news-line1" class = "news-line">
+        <ul>
+          <li id = "line1-left">
+            <div>
+              <img src="./img/news/news_mega.webp" class = "line1-mega">
+              <span class = "line1-bodo">보도자료</span>&nbsp;&nbsp;2024.08.06
+            </div>
+            <a href="">
+              <strong>카카오같이가치, 광복절 맞아 '815를 기억하는 모두의행동' 진행</strong>
+              <br><br><br><br><br><br>
+              <span class="line1-tag">#카카오같이가치  #815캠페인  #카카오메이커스</span>
+            </a>
+          </li>
+          <li id = "line1-mid">
+            <div>
+              <img src="./img/news/news_mega.webp" class = "line1-mega">
+              <span class = "line1-bodo">보도자료</span>&nbsp;&nbsp;2024.08.06
+            </div>
+            <a href="">
+              <strong>톡학생증 전용 혜택 강화...카카오,스타벅스와 업무협약 체결</strong>
+              <br><br><br><br><br><br>
+              <span class="line1-tag">#카카오  #스타벅스  #mou  #업무협약식  #톡학생증</span>
+            </a>
+          </li>
+          <li id = "line1-right">
+            <div>
+              <img src="./img/news/news_mega.webp" class = "line1-mega">
+              <span class = "line1-bodo">보도자료</span>&nbsp;&nbsp;2024.08.06
+            </div>
+            <a href="">
+              <strong>카카오, 도심에서 들기는 워터파크 '2024 서울썸머비치'참여</strong>
+              <br><br><br><br><br><br>
+              <span class="line1-tag">#광화문  #라이언  #라춘도쪼비치  #춘식이  #카카오</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 뉴스 2번째 라인 (칸 2개) -->
+      <div id = "news-line2" class = "news-line">
+        <ul>
+          <li>
+            <div>
+              <img src="./img/news/news_mega.webp" class = "line2-mega">
+              <span class = "line2-bodo">보도자료</span>&nbsp;&nbsp;2024.08.06
+            </div>
+            <a href="">
+              <span class = "line2-title">일상에서 필요한 장소 정보를 쉽고 빠르게…카카오맵, 장소상세 서비스 개편</span>
+            </a>
+          </li>
+          <li>
+            <div>
+              <img src="./img/news/news_mega.webp" class = "line2-mega">
+              <span class = "line2-bodo">보도자료</span>&nbsp;&nbsp;2024.07.26
+            </div>
+            <a href="">
+              <span class = "line2-title">카카오, 2030 청년 대상 ESG 아카데미 진행</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 뉴스 2번째 라인 (칸 3개) -->
+      <div id = "news-line3" class = "news-line">
+        <ul>
+          <li><a href="">
+            <strong>전체뉴스</strong>
+            <span>바로가기&nbsp;&nbsp;<span class="black-back-arrow">→</span></span>
+          </a></li>
+          <li><a href="">
+            <strong>보도자료</strong>
+            <span>바로가기&nbsp;&nbsp;<span class="black-back-arrow">→</span></span>
+          </a></li>
+          <li><a href="">
+            <strong>참고자료</strong>
+            <span>바로가기&nbsp;&nbsp;<span class="black-back-arrow">→</span></span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 무엇을 도와드릴까요? -->
+    <div id = "main-help">
+      <h3 id = "help-title">&nbsp;무엇을 도와드릴까요?</h3>
+      <div class= "help-section">
+        <!-- 고객센터 트리오 -->
+        <section id="help-left" class = "help-gains">
+          <a href="">
+            <div class="help-left-left">
+              <h4>카카오 고객센터</h4><br>
+              <span>바로가기&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">↗</span></span>
+            </div>
+            <div class="help-left-right">
+              <span><img src="./img/help/help_kakao.webp" alt="" class = "help-icon"></span>
+            </div>
+          </a>
+          <a href="">
+            <div class="help-left-left">
+              <h4>다음 고객센터</h4><br>
+              <span>바로가기&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">↗</span></span>
+            </div>
+            <div class="help-left-right">
+              <span><img src="./img//help/help_daum.webp" alt="" class = "help-icon"></span>
+            </div>
+          </a>
+          <a href="">
+            <div class="help-left-left">
+              <h4>커머스 고객센터</h4><br>
+              <span>바로가기&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">↗</span></span>
+            </div>
+            <div class="help-left-right">
+              <span><img src="./img/help/help_comm.webp" alt="" class = "help-icon"></span>
+            </div>
+          </a>
+        </section>
+        <!-- 가운데 -->
+        <section id="help-mid" class="help-whole">
+          <article>
+            <strong>카카오의 다양한 소식을 구독하세요!</strong><br><br>
+            <p>공식 소셜 미디어 바로가기</p>
+            <div id="help-mid-icons">
+              <a href=""><img src="./img/help/help_mid_ch.png" alt=""></a>
+              <a href=""><img src="./img/help/help_mid_youtube.png" alt=""></a>
+              <a href=""><img src="./img/help/help_mid_insta.png" alt=""></a>
+              <a href=""><img src="./img/help/help_mid_faceb.png" alt=""></a>
+              <a href=""><img src="./img/help/help_mid_in.png" alt=""></a>
+            </div>
+          </article>
+        </section>
+        <!-- 우상단 -->
+        <section id="help-right" class="help-whole">
+          <article>
+            <strong>세상만사에 관심이 많다면,</strong><br>
+            <strong>당신은 이미 카카오 크루</strong><br><br>
+            <a href="">바로가기&nbsp;&nbsp;&nbsp;<span class = "white-back-arrow">↗</span></a>
+          </article>
+        </section>
+      </div>
+      <!-- 아랫단 (칸 2개) -->
+      <div id= "help-section-bot" class= "help-section">
+        <section id="help-left-bot" class = "help-gains">
+          <a href="">
+            <div class="help-left-left">
+              <h4>투자정보</h4><br>
+              <span>바로가기&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">↗</span></span>
+            </div>
+            <div class="help-left-right">
+              <span><img src="./img/help/help_graph.webp" alt=""></span>
+            </div>
+          </a>
+        </section>
+        <section id="help-right-bot" class = "help-gains">
+          <a href="">
+            <div class="help-left-left">
+              <h4>커머스 고객센터</h4><br>
+              <span>바로가기&nbsp;&nbsp;&nbsp;<span class = "black-back-arrow">↗</span></span>
+            </div>
+            <div class="help-left-right">
+              <span><img src="./img/help/help_lock.webp" alt=""></span>
+            </div>
+          </a>
+        </section>
+      </div>
+      <div id="help-news-all" class="all-link">
+        <a href="">카카오 소식 모아보기 &nbsp;&nbsp;<span class ="black-back-arrow">→</span></a>
+      </div>
+    </div>
+    <hr>
+  </main>
+  <!-- 푸터 -->
+  <footer>
+    <div id ="footer-start">
+      <h2>오늘의 카카오</h2>
+    </div>
+    <div>
+      <!-- 여러 링크칸들 -->
+      <section class = "foot-today">
+        <div class ="foot-sharps">
+          <ul>
+            <li><a href="">카카오톡 공식 다운로드&nbsp;></a></li>
+            <li><a href="">카카오톡백업</a></li>
+            <li><a href="">#카카오이모티콘샵</a></li>
+            <li><a href="">#조용한채팅방</a></li>
+            <li><a href="">#카카오맵</a></li>
+            <li><a href="">#지속가능성</a></li>
+            <li><a href="">#개발자도구</a></li>
+          </ul>
+        </div>
+        <div class ="foot-service">
+          <strong>카카오 그룹의 서비스</strong>
+          <ul>
+            <li><a href="">커뮤니케이션</a></li>
+            <li><a href="">일상편의</a></li>
+            <li><a href="">비즈니스</a></li>
+            <li><a href="">쇼핑</a></li>
+            <li><a href="">엔터테인먼트</a></li>
+            <li><a href="">임팩트</a></li>
+          </ul>
+        </div>
+        <div class ="foot-group">
+          <strong>카카오 그룹</strong>
+          <ul>
+            <li><a href="">카카오</a></li>
+            <li><a href="">카카오페이&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오뱅크&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오모빌리티&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오스타일&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오엔터테인먼트&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오게임즈&nbsp;<span>↗</span></a></li>
+          </ul>
+        </div>
+        <div class ="foot-group">
+          <ul>
+            <li><a href="">카카오픽코마&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오브레인&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오엔터프라이즈&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오헬스케어&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오벤처스&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오인베스트먼트&nbsp;<span>↗</span></a></li>
+            <li><a href="">링키지랩&nbsp;<span>↗</span></a></li>
+          </ul>
+        </div>
+        <div class ="foot-IR">
+          <strong>IR</strong>
+          <ul>
+            <li><a href="">기업지배구조&nbsp;<span>↗</span></a></li>
+            <li><a href="">주가정보&nbsp;<span>↗</span></a></li>
+            <li><a href="">재무정보&nbsp;<span>↗</span></a></li>
+            <li><a href="">IR행사&nbsp;<span>↗</span></a></li>
+            <li><a href="">공시정보&nbsp;<span>↗</span></a></li>
+            <li><a href="">공고&nbsp;<span>↗</span></a></li>
+          </ul>
+        </div>
+        <div class ="foot-support">
+          <strong>계정 및 지원</strong>
+          <ul>
+            <li><a href="">카카오계정&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오 프라이버시&nbsp;<span>↗</span></a></li>
+            <li><a href="">카카오 고객센터&nbsp;<span>↗</span></a></li>
+            <li><a href="">다음 고객센터&nbsp;<span>↗</span></a></li>
+            <li><a href="">커머스 고객센터&nbsp;<span>↗</span></a></li>
+            <li><a href="">인재영입&nbsp;<span>↗</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class= "foot-information"></section>
+      <!-- 이용약관~관련사이트 라인 -->
+        <div class = "foot-related">
+          관련사이트&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>+</span>
+          <ul id = "related-hidden">
+            <li><a href="">카카오 AI&nbsp;<span>↑</span></a></li>
+            <li><a href="">카카오 프라이버시&nbsp;<span>↑</span></a></li>
+            <li><a href="">카카오 디벨로퍼스&nbsp;<span>↑</span></a></li>
+            <li><a href="">다음 포털 사이트&nbsp;<span>↑</span></a></li>
+            <li><a href="">동반 성장 사이트&nbsp;<span>↑</span></a></li>
+            <li><a href="">제주 with kakao&nbsp;<span>↑</span></a></li>
+          </ul>
+        </div>
+        <!-- 아직 완성 안된게 있음 -->
+        <!-- >가 붙은 애들은 숨은 드롭박스가 있음. -->
+        <div class = "foot-info">
+          <ul>
+            <li>
+              <a href="" class="foot-info-hiddrop" id="foot-info-doc">이용약관&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden">
+                <li><a href="">카카오계정 서비스&nbsp;<span>↗</span></a></li>
+                <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
+                <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="foot-info-hiddrop">위치정보 이용약관&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden">
+                <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
+                <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="foot-info-hiddrop">개인정보처리방침&nbsp;<span>^</span></a>
+              <ul class = foot-info-hidden>
+                <li><a href="">기업사이트</a></li>
+                <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
+              </ul>
+            </li>
+            <li><a href="">운영정책</a></li>
+            <li>
+              <a href="" class="foot-info-hiddrop">청소년보호정책&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden">
+                <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
+                <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
+              </ul>
+            </li>
+            <li><a href="">접근성 안내</a></li>
+            <li><a href="">브랜드 보호 정책</a></li>
+            <li><a href="">권리침해신고안내</a></li>
+            <li>
+              <a href="" class="foot-info-hiddrop">공지사항&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden">
+                <li><a href="">투자정보 공지</a></li>
+                <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
+                <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
+              </ul>
+            </li>
+            <li><a href="">사이버윤리실</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class = "foot-reserved">© Kakao Corp. All rights reserved.</div>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,775 @@
+*{
+  padding : 0;
+  margin: 0;
+  letter-spacing: -1px;
+}
+/* 범용 사용 세팅---------------------------------------------- */
+/* li 세팅 */
+li{
+  list-style-type: none;
+}
+
+/* 링크 텍스트 세팅 */
+body a{
+  color:black;
+  text-decoration: none;
+}
+body a:visited{
+  color:black;
+}
+/* 서비스 전체보기 & 카카오 소식 모아보기 (섹션별 tail-모아보기) */
+.all-link{
+  text-align: center;
+  height : 75px;
+  padding-top : 70px
+}
+
+.all-link a{
+  display: inline-block;
+  line-height: 75px;
+  width : 15%;
+  height : 100%;
+  border-radius: 38px;
+  background-color: rgb(235,235,235);
+  font-weight: bold;
+}
+
+/* 검은 바탕 원에 하얀 화살표 표시 그리기 */
+.black-back-arrow{
+  display: inline-block;
+  background-color: black;
+  color :white;
+  height : 26px;
+  width: 26px;
+  line-height: 26px;
+  border-radius: 13px;
+  font-weight: 200;
+  text-align:center;
+}
+.black-back-arrow:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+/* 하얀 바탕 원에 검은화살표 표시 그리기 */
+.white-back-arrow{
+  display: inline-block;
+  background-color: white;
+  color:black;
+  height : 26px;
+  width: 26px;
+  line-height: 26px;
+  border-radius: 13px;
+  font-weight: 200;
+  text-align:center;
+}
+.white-back-arrow:hover{
+  background-color: rgb(180, 180, 180);
+}
+
+
+/* 헤더-------------------------------------------------------- */
+header{
+  display : block;
+  height : 85px;
+  width : 100%;
+  position :fixed;
+  text-align: center;
+  z-index: 2;
+  background-color: white;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+header nav{
+  height : 84px;
+  width : 75%;
+  margin : 0 auto 100px auto;
+}
+
+header nav>ul{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height:100%;
+  flex-wrap: nowrap;
+}
+
+nav>ul>li{
+  display : inline-block;
+  padding: 0 40px;
+  line-height: 84px;
+}
+
+.header-center>div>a{
+  position:relative;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: -.5px;
+}
+
+#header-mag{
+  margin-left: auto;
+}
+
+#header-intro{
+  margin-left : auto;
+}
+
+#header-left{
+  padding: 30px 0 0 0;
+  line-height: 20px;
+}
+
+#header-logo{
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  bottom:15px;
+}
+
+.header-right{
+  padding: 0 10px;
+}
+.header-right a{
+  display: block;
+  position: relative;
+  top: 11px;
+}
+
+/* 돋보기 표시 호버링하면 검색창 뜨게까지는 해야할거 같은데... 이건 또다른 난제네 */
+.header-center .header-drop{
+  display: none;
+  position : absolute;
+  top:60px;
+  background-color: black;
+  height : 50px;
+  padding : 0 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+.header-center .header-drop li{
+  display: inline-block;
+  height : 50px;
+  line-height: 50px;
+}
+.header-drop a{
+  color:white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header-drop a:visited{
+  color:white;
+}
+#header-intro{
+  anchor-name: --header-intro;
+}
+#drop-intro{
+  left:anchor(--header-intro -15%);
+}
+#header-story{
+  anchor-name: --header-story;
+}
+#drop-story{
+  left:anchor(--header-story -120%);
+}
+#header-tech{
+  anchor-name: --header-tech;
+}
+#drop-tech{
+  left:anchor(--header-tech 17%);
+}
+#header-resp{
+  anchor-name: --header-resp;
+}
+#drop-resp{
+  left:anchor(--header-resp -35%);
+}
+#header-news{
+  anchor-name: --header-news;
+}
+#drop-news{
+  left:anchor(--header-news -3%);
+}
+.header-center>div>a:hover+.header-drop{
+  display : flex;
+}
+/* main-------------------------------------------------------------------------------------------------------- */
+
+main{
+  display: block;
+  position: relative;
+  top: 85px;
+  width:100%;
+}
+
+main h3{
+  margin : 0 auto;
+  font-size : 52px;
+  font-weight:400;
+  margin-bottom: 50px;
+}
+main>div:not(#main-stories){
+  margin : 0 auto 200px auto;
+  width: 75%;
+  display: block;
+}
+
+
+/* 카카오와 카카오 그룹이 축적해온 이야기들------------------------------------------------------------------- */
+#main-stories{
+  width: 100%;
+}
+#main-stories h3{
+  width: 75%;
+}
+#story-title::before{
+  content: "";
+  display:inline-block;
+  vertical-align: top;
+  height : 78px;
+  width:78px;
+  background-size: 100%;
+  background-image:url(./img/film.gif);
+}
+.black-back-play{
+  position:relative;
+  float:right;
+  right:15.5%;
+  top:20px;
+  font-size:20px;
+  text-align: center;
+
+  background-color: black;
+  color : white;
+  width:45px;
+  height:45px;
+  line-height: 43px;
+  border-radius: 23px;
+}
+#story-banner{
+  overflow:hidden;
+}
+@keyframes banner-roll {
+  0% {
+      right:0 ;
+  }
+  100% {
+      right:3800px ;
+  }
+}
+#banner-cont{
+  height:700px;
+  width:6100px;
+  position: relative;
+  animation-name: banner-roll;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#banner-cont:hover{
+  animation-play-state: paused;
+}
+#banner-cont>a{
+  vertical-align: middle;
+  position:relative;
+  display: inline-block;
+  height:490px;
+  background-color: rgb(235,235,235);
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin-left:15px;
+  background-repeat: no-repeat;
+}
+#banner-cont>.banner-large-ex{
+  width:1400px;
+  background-position: right;
+  background-size: auto 100%;
+}
+#banner-cont>.banner-large{
+  width:950px;
+  background-position: right;
+  background-size: auto 100%;
+}
+.banner-small-up, .banner-small-down{
+  width:400px;
+}
+.banner-large-ex a, .banner-large a{
+  display:block;
+}
+.banner-large-ex .banner-text, .banner-large .banner-text{
+  width:350px;
+}
+.banner-small-down .banner-text{
+  position: relative;
+  top : 255px;
+}
+.banner-tag-large{
+  position:absolute;
+  top : 532px;
+}
+.banner-tag-small{
+  position:absolute;
+  top : 230px;
+}
+#banner-cont>.banner-small-up{
+  background-position: bottom;
+  background-size: 100% auto;
+}
+#banner-cont>.banner-small-down{
+  background-position: top;
+  background-size: 100% auto;
+}
+.banner-content-type{
+  height:30px;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  padding : 8px 10px;
+  font-size : 13px;
+}
+.banner-title{
+  font-size:30px;
+}
+.story-icon{
+  height : 30px;
+  width: 30px;
+  vertical-align: top;
+}
+#banner-1{
+  background-image: url(./img/story/story_banner1.webp);
+}
+#banner-2{
+  background-image: url(./img/story/story_banner2.webp);
+}
+#banner-3{
+  background-image: url(./img/story/story_banner3.webp);
+}
+#banner-4{
+  background-image: url(./img/story/story_banner4.webp);
+}
+#banner-5{
+  background-image: url(./img/story/story_banner5.webp);
+}
+#banner-6{
+  background-image: url(./img/story/story_banner6.webp);
+}
+#banner-7{
+  background-image: url(./img/story/story_banner7.webp);
+}
+#banner-8{
+  background-image: url(./img/story/story_banner8.webp);
+}
+#banner-9{
+  background-image: url(./img/story/story_banner9.webp);
+}
+
+
+
+/* 더 나은 세상을 만드는 카카오 서비스--------------------------------------------------------------- */
+#service-title::before{
+  content: "";
+  display:inline-block;
+  vertical-align: top;
+  height : 78px;
+  width:78px;
+  background-size: 100%;
+  background-image:url(./img/bulb_service.gif);
+}
+#main-services>#service-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -16px 0 0 -16px;
+  align-items: center;
+}
+#main-services>div>section{
+  flex : 1 1 40%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  height:150px;
+  width: 40%;
+  margin: 16px 0 0 16px;
+  padding: 17px 30px;
+  line-height: 150px;
+  border-radius: 30px;
+}
+
+#main-services>div>section>article{
+  font-size: 30px;
+  font-weight: bold;
+  width:40%;
+}
+
+#main-services article>a{
+  border-radius: 12px;
+}
+
+#main-services>div img{
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-size: 100%;
+  vertical-align: middle;
+  padding : 0 3px;
+}
+
+#main-services .icon-plus{
+  display: inline-block;
+  vertical-align: middle;
+  background-color:grey;
+  width: 56px;
+  height: 56px;
+  line-height: 46px;
+  text-align: center;
+  font-size:40px;
+  color: white;
+}
+
+#main-services .icon-plus:hover{
+  background-color: black;
+}
+#main-services .icon-plus:visited{
+  color: white;
+}
+
+
+/* 오늘의 뉴스------------------------------------------------------------------------------------------------------ */
+
+#news-title::before{
+  content: "";
+  display:inline-block;
+  vertical-align: top;
+  height : 78px;
+  width:78px;
+  background-size: 100%;
+  background-image:url(./img/calc_news.gif);
+}
+.news-line div{
+  padding-bottom: 30px;
+}
+.news-line ul{
+  display:flex;
+  margin: -16px 0 0 -16px;
+}
+/* 뉴스 1라인 */
+#news-line1 li{
+  flex : 1 1 30%;
+  background-color: rgb(235,235,235);
+  margin : 16px 0 0 16px;
+  padding : 50px 40px;
+  height : 550px;
+  border-radius: 30px;
+}
+.line1-bodo{
+  background-color: white;
+  padding : 12px 15px;
+  border-radius: 12px;
+}
+.line1-mega{
+  display: inline-block;
+  vertical-align: middle;
+  width : 45px;
+  height: 45px;
+  padding-right: 8px;
+}
+#news-line1 strong{
+  font-size:28px;
+}
+#news-line1 .line1-tag{
+  font-size:15px;
+  color:rgb(141, 141, 141);
+  font-weight: bold;
+}
+#news-line1 #line1-left{
+  background-image: url(./img/news/news_thumb_left.webp);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+#news-line1 #line1-mid{
+  background-image: url(./img/news/news_thumb_mid.webp);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+#news-line1 #line1-right{
+  background-image: url(./img/news/news_thumb_right.webp);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+/* 뉴스 2라인 */
+#news-line2{
+  margin-top: 60px;
+}
+#news-line2 li{
+  flex : 1 1 40%;
+  background-color: rgb(235,235,235);
+  margin : 16px 0 0 16px;
+  padding : 50px 40px;
+  height : 150px;
+  border-radius: 30px;
+}
+.line2-mega{
+  display: inline-block;
+  vertical-align: middle;
+  width : 37px;
+  height: 37px;
+  padding-right: 8px;
+}
+.line2-bodo{
+  background-color: white;
+  padding : 6px 12px;
+  border-radius: 12px;
+}
+.line2-title{
+  font-size:26px;
+
+}
+/* 뉴스 3라인 */
+#news-line3{
+  margin-top: 15px;
+}
+#news-line3 li{
+  flex : 1 1 30%;
+  background-color: rgb(235,235,235);
+  margin : 16px 0 0 16px;
+  padding : 50px 40px;
+  height : 20px;
+  line-height: 20px;
+  border-radius: 30px;
+}
+#news-line3 a{
+  display: flex;
+  justify-content: space-between;
+}
+#news-line3 strong{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* 무엇을 도와드릴까요?----------------------------------------------------------------------------------------- */
+#help-title::before{
+  content: "";
+  display:inline-block;
+  vertical-align: top;
+  height : 78px;
+  width:78px;
+  background-size: 100%;
+  background-image:url(./img/help.gif);
+}
+
+#main-help{
+  margin-bottom: 100px;
+}
+.help-section{
+  display:flex;
+  margin: -16px 0 0 -16px;
+}
+
+.help-section section{
+  flex : 1 1 40%;
+  margin-left: 16px;
+}
+
+.help-gains>a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  height:80px;
+  background-color: rgb(235,235,235);
+  padding: 50px 40px;
+  border-radius: 12px;
+}
+/* 좌상단 + 하단 포맷 */
+.help-icon{
+  width:80px;
+  height:80px;
+  border-radius: 40px;
+}
+.help-gains a div{
+  margin : 0;
+  padding : 0;
+}
+.help-gains a .help-left-left{
+  display: block;
+}
+
+#help-section-bot{
+  margin-top:0;
+}
+/* 중앙 상단 + 우상단 */
+.help-whole{
+  margin-top: 16px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+}
+.help-whole>article{
+  padding: 50px 40px;
+}
+.help-whole strong{
+  font-size: 24px;
+}
+.help-whole p,.help-whole article>a{
+  font-size: 17px;
+  font-weight: 500;
+}
+#help-mid{
+  background-color: yellow;
+  background-image: url(./img/help/help_ryan.png);
+  background-size: 264px auto;
+  background-position: bottom;
+}
+#help-mid-icons{
+  display:flex;
+  padding-top : 55px;
+  justify-content: space-around;
+}
+#help-mid-icons img{
+  width: 80px;
+  height: 80px;
+}
+#help-right{
+  background-color: #0073ff;
+  background-image: url(./img/help/help_recruit.png);
+  background-size: 100%;
+  background-position: 0 100%;
+  color: white;
+}
+#help-right a{
+  color: white;
+}
+/* footer---------------------------------------------------------------------------------------------------- */
+footer{
+  width: 75%;
+  position: relative;
+  top:85px;
+  margin: 50px auto 100px auto;
+}
+footer h2{
+  display: block;
+  margin : 80px 0 30px 0;
+}
+footer li{
+  margin-bottom: 10px;
+}
+/* 각종 메뉴들 */
+footer .foot-today{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+footer .foot-today strong{
+  display: block;
+  margin-bottom: 10px;
+}
+footer .foot-today div:not(.foot-sharps){
+  margin :0px 60px 90px 60px;
+}
+footer .foot-today .foot-sharps{
+  margin :0 60px 90px 0;
+}
+.foot-today div:not(.foot-sharps) a{
+  color:rgb(126, 126, 126);
+}
+.foot-today span{
+  font-weight: bold;
+}
+.foot-today div:not(.foot-sharps) a:hover{
+  color:black;
+}
+
+/* footer-맨 밑 */
+.foot-info{
+  flex-wrap: wrap;
+  height : 20px;
+}
+.foot-info li{
+  display: inline-block;
+  margin-right: 10px;
+  font-size:12px;
+}
+
+/* footer-관련 사이트 */
+.foot-related{
+  background-color: rgb(235,235,235);
+  height : 40px;
+  display: block;
+  float: right;
+  width : 180px;
+  text-align: left;
+  padding-left:15px;
+  line-height: 34px;
+  border-radius: 20px;
+}
+.foot-related span{
+  display: inline-block;
+  text-align: right;
+  font-size: 24px;
+  
+}
+.foot-reserved{
+  font-size:14px;
+  margin-top: 17px;
+  padding-bottom : 50px;
+}
+#related-hidden{
+  display:none;
+  position : relative;
+  bottom : 260px;
+  right:15px;
+  line-height: 23px;
+  background-color: rgb(235,235,235);
+  width:180px;
+  border-radius: 12px;
+  padding : 20px 0 10px 15px;
+  font-size:13px;
+}
+#related-hidden a{
+  color:rgb(167, 167, 167);
+}
+#related-hidden span{
+  font-size:13px;
+  font-weight: bold;
+}
+.foot-related:hover #related-hidden{
+  display: block;
+}
+.foot-related:hover span{
+  position: relative;
+  transform: rotate(45deg);
+}
+#related-hidden li>a:hover {
+  color: black;
+}
+
+.foot-info-hiddrop>span{
+  display: inline-block;
+  font-weight: bold;
+  rotate: 180deg;
+}
+.foot-info-hiddrop:hover span{
+  rotate: 0deg;
+}
+.foot-info-hiddrop:hover +.foot-info-hidden{
+  display: block;
+}
+.foot-info-hidden:hover{
+  display: block;
+}
+.foot-info-hidden{
+  display: none;
+  position: absolute;
+  width:115px;
+  padding:10px 15px 0px 20px;
+  background-color: rgb(235,235,235);
+  bottom:100px;
+  border-radius: 12px;
+}
+.foot-info-hidden>li>a{
+  font-weight: 500;
+  color:rgb(167, 167, 167);
+}
+.foot-info-hidden a:hover{
+  color:black;
+}
