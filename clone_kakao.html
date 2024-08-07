@@ -81,8 +81,9 @@
   <main>
     <!-- 카카오와 카카오 그룹이 축적해온 이야기들 -->
     <div id = "main-stories">
-      <span class = "black-back-play">▶</span><h3 id="story-title">&nbsp;카카오와 카카오 그룹이 축적해온 이야기들</h3>
+      <h3 id="story-title">&nbsp;카카오와 카카오 그룹이 축적해온 이야기들</h3>
       <section id = "story-banner">
+        <span class = "black-back-play">▶</span>
         <div id="banner-cont">
           <!-- 1번 -->
           <a href="" class = "banner-large-ex" id ="banner-1">
@@ -220,6 +221,66 @@
               </div>
             </div>
           </a>
+          <!-- 재탕 이유: 배너가 무한히 돌아가는것처럼 보이게 -->
+          <!-- 1번-재탕 -->
+          <a href="" class = "banner-large-ex" id ="banner-10">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>왕초보 사장님들의 단골 만들기 비법</strong>
+                <br><br>
+                <div>마케팅이 어려웠던 사장님이 매출 500% 올린 비결</div>
+                <div class = "banner-tag-large">#소상공인지원&nbsp;&nbsp;#카카오상생활동&nbsp;&nbsp;#카카오톡채널</div>
+              </div>
+            </div>
+          </a>
+          <!-- 2번-재탕 -->
+          <a href="" class = "banner-small-up" id ="banner-11">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_cards.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">더 가깝게</span>
+                </div>
+                <br>
+                <strong class = banner-title>무료로 여는 톡 안의 두번째 매장</strong>                
+                <div class = "banner-tag-small">#디지털전환&nbsp;&nbsp;#카카오톡채널</div>
+              </div>
+            </div>
+          </a>
+          <!-- 3번-재탕 -->
+          <a href="" class = "banner-small-down" id ="banner-12">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>도로 위 히어로즈</strong>
+                <br>
+                <div class = "banner-tag-small">#카카오모빌리티&nbsp;&nbsp;#파트너상생</div>
+              </div>
+            </div>
+          </a>
+          <!-- 4번-재탕 -->
+          <a href="" class = "banner-small-up" id ="banner-13">
+            <div>
+              <div class ="banner-text">
+                <div>
+                  <img src="./img/story/story_icon_film.webp" alt="" class = "story-icon">
+                  <span class = "banner-content-type">임팩트</span>
+                </div>
+                <br>
+                <strong class = banner-title>카카오가 꿈꾸는 지속가능한 미래</strong>
+                <br>
+                <div class = "banner-tag-small">#ESG&nbsp;&nbsp;#ESG보고서&nbsp;&nbsp;#약속과책임&nbsp;&nbsp;#카카오</div>
+              </div>
+            </div>
           </a>
         </div>
       </section>
@@ -473,7 +534,7 @@
       <h2>오늘의 카카오</h2>
     </div>
     <div>
-      <!-- 여러 링크칸들 -->
+      <!-- 푸터 상부: 여러 링크 -->
       <section class = "foot-today">
         <div class ="foot-sharps">
           <ul>
@@ -556,36 +617,34 @@
             <li><a href="">제주 with kakao&nbsp;<span>↑</span></a></li>
           </ul>
         </div>
-        <!-- 아직 완성 안된게 있음 -->
-        <!-- >가 붙은 애들은 숨은 드롭박스가 있음. -->
         <div class = "foot-info">
           <ul>
             <li>
-              <a href="" class="foot-info-hiddrop" id="foot-info-doc">이용약관&nbsp;<span>^</span></a>
-              <ul class = "foot-info-hidden">
+              <a href="" class="foot-info-hiddrop" id = "foot-info-doc">이용약관&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden" id = "drop-doc">
                 <li><a href="">카카오계정 서비스&nbsp;<span>↗</span></a></li>
                 <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
                 <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
               </ul>
             </li>
             <li>
-              <a href="" class="foot-info-hiddrop">위치정보 이용약관&nbsp;<span>^</span></a>
-              <ul class = "foot-info-hidden">
+              <a href="" class="foot-info-hiddrop" id = "foot-info-gps">위치정보 이용약관&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden" id = "drop-gps">
                 <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
                 <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
               </ul>
             </li>
             <li>
-              <a href="" class="foot-info-hiddrop">개인정보처리방침&nbsp;<span>^</span></a>
-              <ul class = foot-info-hidden>
+              <a href="" class="foot-info-hiddrop" id = "foot-info-indiv">개인정보처리방침&nbsp;<span>^</span></a>
+              <ul class = foot-info-hidden  id = "drop-indiv">
                 <li><a href="">기업사이트</a></li>
                 <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
               </ul>
             </li>
             <li><a href="">운영정책</a></li>
             <li>
-              <a href="" class="foot-info-hiddrop">청소년보호정책&nbsp;<span>^</span></a>
-              <ul class = "foot-info-hidden">
+              <a href="" class="foot-info-hiddrop" id = "foot-info-youth">청소년보호정책&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden"  id = "drop-youth">
                 <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
                 <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>
               </ul>
@@ -594,8 +653,8 @@
             <li><a href="">브랜드 보호 정책</a></li>
             <li><a href="">권리침해신고안내</a></li>
             <li>
-              <a href="" class="foot-info-hiddrop">공지사항&nbsp;<span>^</span></a>
-              <ul class = "foot-info-hidden">
+              <a href="" class="foot-info-hiddrop" id = "foot-info-notice">공지사항&nbsp;<span>^</span></a>
+              <ul class = "foot-info-hidden" id = "drop-notice">
                 <li><a href="">투자정보 공지</a></li>
                 <li><a href="">카카오 서비스&nbsp;<span>↗</span></a></li>
                 <li><a href="">Daum 서비스&nbsp;<span>↗</span></a></li>

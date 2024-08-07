@@ -136,8 +136,12 @@ nav>ul>li{
   position: relative;
   top: 11px;
 }
+.header-right img:hover{
+  filter:brightness(0.8);
+  border-radius: 18px;
+}
 
-/* 돋보기 표시 호버링하면 검색창 뜨게까지는 해야할거 같은데... 이건 또다른 난제네 */
+/* 검은색 드롭박스들 */
 .header-center .header-drop{
   display: none;
   position : absolute;
@@ -219,6 +223,7 @@ main>div:not(#main-stories){
 /* 카카오와 카카오 그룹이 축적해온 이야기들------------------------------------------------------------------- */
 #main-stories{
   width: 100%;
+  margin-bottom: 200px;
 }
 #main-stories h3{
   width: 75%;
@@ -233,10 +238,10 @@ main>div:not(#main-stories){
   background-image:url(./img/film.gif);
 }
 .black-back-play{
-  position:relative;
+  position:absolute;
   float:right;
   right:15.5%;
-  top:20px;
+  top:15px;
   font-size:20px;
   text-align: center;
 
@@ -252,22 +257,23 @@ main>div:not(#main-stories){
 }
 @keyframes banner-roll {
   0% {
-      right:0 ;
+      right:0;
   }
   100% {
-      right:3800px ;
+      right:6040px;
   }
 }
+/* 배너 전체 한번 돌려면 6041px */
 #banner-cont{
-  height:700px;
-  width:6100px;
+  height:590px;
+  width:10000px;
   position: relative;
   animation-name: banner-roll;
-  animation-duration: 100s;
+  animation-duration: 300s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-#banner-cont:hover{
+#banner-cont:hover, .black-back-play:hover+#banner-cont{
   animation-play-state: paused;
 }
 #banner-cont>a{
@@ -336,16 +342,16 @@ main>div:not(#main-stories){
   width: 30px;
   vertical-align: top;
 }
-#banner-1{
+#banner-1,#banner-10{
   background-image: url(./img/story/story_banner1.webp);
 }
-#banner-2{
+#banner-2,#banner-11{
   background-image: url(./img/story/story_banner2.webp);
 }
-#banner-3{
+#banner-3,#banner-12{
   background-image: url(./img/story/story_banner3.webp);
 }
-#banner-4{
+#banner-4,#banner-13{
   background-image: url(./img/story/story_banner4.webp);
 }
 #banner-5{
@@ -750,7 +756,9 @@ footer .foot-today div{
 #related-hidden li>a:hover {
   color: black;
 }
-
+#foot-info-gps, #foot-info-indiv{
+  font-weight: 1000;
+}
 .foot-info-hiddrop>span{
   display: inline-block;
   font-weight: bold;
@@ -759,7 +767,7 @@ footer .foot-today div{
 .foot-info-hiddrop:hover span{
   rotate: 0deg;
 }
-.foot-info-hiddrop:hover +.foot-info-hidden{
+.foot-info-hiddrop:hover+.foot-info-hidden{
   display: block;
 }
 .foot-info-hidden:hover{
@@ -767,12 +775,11 @@ footer .foot-today div{
 }
 .foot-info-hidden{
   display: none;
-  position: absolute;
   width:115px;
   padding:10px 15px 0px 20px;
   background-color: rgb(235,235,235);
-  bottom:100px;
   border-radius: 12px;
+  position : absolute;
 }
 .foot-info-hidden>li>a{
   font-weight: 500;
@@ -780,4 +787,34 @@ footer .foot-today div{
 }
 .foot-info-hidden a:hover{
   color:black;
+}
+#foot-info-doc{
+  anchor-name: --foot-info-doc;
+}
+#drop-doc{
+  bottom:anchor(--foot-info-doc top);
+}
+#foot-info-gps{
+  anchor-name: --foot-info-gps;
+}
+#drop-gps{
+  bottom:anchor(--foot-info-gps top);
+}
+#foot-info-indiv{
+  anchor-name: --foot-info-indiv;
+}
+#drop-indiv{
+  bottom:anchor(--foot-info-indiv top);
+}
+#foot-info-youth{
+  anchor-name: --foot-info-youth;
+}
+#drop-youth{
+  bottom:anchor(--foot-info-youth top);
+}
+#foot-info-notice{
+  anchor-name: --foot-info-notice;
+}
+#drop-notice{
+  bottom:anchor(--foot-info-notice top);
 }
